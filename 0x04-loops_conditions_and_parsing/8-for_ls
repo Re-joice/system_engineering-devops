@@ -1,0 +1,9 @@
+#!/bin/bash
+#!/usr/bin/env bash
+for file in *; do
+  # Skip hidden files (those starting with a dot)
+  if [[ $file != .* ]]; then
+    # Remove everything up to and including the first dash
+    echo "${file#*-}"
+  fi
+done
