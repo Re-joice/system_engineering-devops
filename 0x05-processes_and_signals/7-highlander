@@ -1,11 +1,8 @@
 #!/bin/bash
 #!/usr/bin/env bash
-# Runs indefinitely and handles SIGTERM gracefully
-# Trap SIGTERM and print a custom message instead of exiting
-trap 'echo
-# Infinite loop
-while true
-do
+# Runs indefinitely and handles SIGTERM by printing a message
+trap 'echo "I am invincible!!!"' TERM
+while true; do
   echo "To infinity and beyond"
   sleep 2
 done
