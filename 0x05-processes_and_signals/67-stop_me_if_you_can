@@ -1,5 +1,4 @@
 #!/bin/bash
 #!/usr/bin/env bash
-# Script to send SIGTERM to 7-highlander process
-
-pkill -f 7-highlander
+# Use pkill to send SIGTERM to the process by name
+pkill 7-highlander 
