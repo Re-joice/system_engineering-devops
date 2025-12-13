@@ -1,10 +1,10 @@
 #!/bin/bash
 #!/usr/bin/env bash
-# Stops the 7-highlander process (it ignores SIGTERM, so use SIGKILL)
-pid=$(pgrep -f 7-highlander)
-if [ -n "$pid" ]; then
-  kill -9 "$pid"
-  echo "Force-stopped 7-highlander (PID: $pid)"
-else
-  echo "No 7-highlander process found."
-fi
+# Infinite loop script that handles SIGTERM
+
+trap 'echo "I am invincible!!!"' SIGTERM
+
+while true; do
+    echo "To infinity and beyond"
+    sleep 2
+done
