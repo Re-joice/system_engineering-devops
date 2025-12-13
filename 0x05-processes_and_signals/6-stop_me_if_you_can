@@ -1,4 +1,0 @@
-#!/bin/bash
-#!/usr/bin/env bash
-# Use pkill to send SIGTERM to the process by name
-pkill -f 4-to_infinity_and_beyond
