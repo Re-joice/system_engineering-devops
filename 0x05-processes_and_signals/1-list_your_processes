@@ -1,10 +1,5 @@
 #!/bin/bash
 #!/usr/bin/env bash
-if command -v pstree >/dev/null 2>&1; then
-  # -a: show full command lines
-  # -p: show PIDs
-  # -u: show process owners (users)
-  pstree -a -p -u
-  exit 0
-fi
-ps -e -o user,pid,ppid,%cpu,%mem,tty,stat,start,time,command --forest
+# Display processes in required format
+
+ps -auxf
