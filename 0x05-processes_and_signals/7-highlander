@@ -8,3 +8,7 @@ while true; do
     echo "To infinity and beyond"
     sleep 2
 done
+ #!/usr/bin/env bash
+# Script to send SIGTERM to 7-highlander process
+
+pkill -f 7-highlander
