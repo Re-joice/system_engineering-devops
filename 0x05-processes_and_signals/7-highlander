@@ -1,10 +1,14 @@
 #!/bin/bash
 #!/usr/bin/env bash
-# Infinite loop script that handles SIGTERM
 
+# 7-highlander
+
+# Trap SIGTERM and print custom message
 trap 'echo "I am invincible!!!"' SIGTERM
 
-while true; do
+# Infinite loop
+while true
+do
     echo "To infinity and beyond"
     sleep 2
 done
